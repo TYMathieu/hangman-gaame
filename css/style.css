@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 0.67em;
+}
+
+/* flex element */
+.flex {
+  display: flex;
+}
+
+.flex div {
+  min-width: 400px;
+  width: 40%;
+  margin: 0 5%;
+}
+
+/* sections */
+
+section {
+  margin-bottom: 1em;
+}
+
+#hidden {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.space {
+  visibility: hidden;
+}
+
+/* Le foutu svg */
+
+.svg {
+  visibility: hidden;
+}
+
+svg {
+  height: auto;
+  margin: 0 10%;
+  width: 80%;
+  border: 2px solid black;
+}
+
+/* Bouton du pendu */
+
+#keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#keyboard button {
+  padding: 0.25em;
+  font-size: 1.5em;
+  width: 2em;
+}
+
+/* info  */
+
+.info section {
+  border: 2px solid black;
+  padding: 1.75em 1em;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+#register {
+  display: none;
+}
+
+/* la modal */
+
+.modalbg {
+  position: fixed;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

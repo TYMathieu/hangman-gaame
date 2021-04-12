@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Jeu du pendu</title>
+  </head>
+
+  <body>
+    <div class="modalbg">
+      <div class="modal-content">
+        <form id="formTheme">
+          <label for="pseudo">Pseudo : </label>
+          <input type="text" name="pseudo" id="pseudo" required />
+          <label for="theme">Choisissez votre thème</label>
+          <select name="theme" id="theme">
+            <option value="pokemon">Pokemon</option>
+            <option value="jojo">Jojo</option>
+          </select>
+          <input type="submit" value="Jouer!" />
+          <a href="leaderboard.php">Aller voir le classement</a>
+        </form>
+      </div>
+    </div>
+    <h1>Le jeu du pendu</h1>
+    <div class="flex">
+      <div class="wrap">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg viewBox="0 0 289 242" xmlns="http://www.w3.org/2000/svg">
+          <line
+            id="svg1"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="14.437"
+            y1="220.822"
+            x2="200.416"
+            y2="220.242"
+          />
+          <line
+            id="svg2"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="102.502"
+            y1="220.822"
+            x2="104.24"
+            y2="13.985"
+          />
+          <line
+            id="svg3"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="104.24"
+            y1="13.985"
+            x2="230.543"
+            y2="14.564"
+          />
+          <line
+            id="svg4"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="136.685"
+            y1="14.564"
+            x2="104.24"
+            y2="36.001"
+          />
+          <line
+            id="svg5"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="229.964"
+            y1="14.723"
+            x2="229.964"
+            y2="43.692"
+          />
+          <circle id="svg6" class="svg" cx="230.543" cy="59.176" r="14.26" />
+          <line
+            id="svg7"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="232.282"
+            y1="70.184"
+            x2="232.282"
+            y2="132.177"
+          />
+          <line
+            id="svg8"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="232.282"
+            y1="131.598"
+            x2="218.377"
+            y2="150.138"
+          />
+          <line
+            id="svg9"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="231.978"
+            y1="131.578"
+            x2="245.262"
+            y2="150.137"
+          />
+          <line
+            id="svg10"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="232.369"
+            y1="90.163"
+            x2="253.272"
+            y2="82.739"
+          />
+          <line
+            id="svg11"
+            class="svg"
+            style="stroke: rgb(0, 0, 0)"
+            x1="232"
+            y1="90.2"
+            x2="215.959"
+            y2="82.935"
+          />
+        </svg>
+        <section id="hidden"></section>
+        <section id="keyboard"></section>
+      </div>
+      <div class="info">
+        <section id="recap">
+          <p>Rappel des règles séléctionnés</p>
+          <p>Mode de jeu : Classique</p>
+          <p id="timer">Temps écoulé:</p>
+          <p>Nombre de fail restant :<span id="fail"></span></p>
+          <button id="register">Enregistrer le score</button>
+        </section>
+        <section id="rappel">
+          <p>Rappel des dernières parties</p>
+          <p>Victoires :</p>
+          <p>Défaites :</p>
+          <p>Série de victoires :</p>
+        </section>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/class.js"></script>
+  <script src="js/main.js"></script>
+</html>
